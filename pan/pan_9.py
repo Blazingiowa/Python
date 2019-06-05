@@ -5,5 +5,5 @@ df = pd.read_csv('Testdata.csv')
 df['合計']=df[['国語','数学','英語']].sum(axis=1)
 df['順位']=df['合計'].rank(ascending=False)
 
-df.plot(kind='bar', x='ID', y='合計', rot=90)
+df.plot(kind='bar', x='ID', y='合計', rot=0)
 plt.show()
