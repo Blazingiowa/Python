@@ -1,7 +1,6 @@
 import pandas as pd
 df=pd.read_csv('Testdata.csv')
-col_list=list(df)
-col_list.remove('ID')
-df['合計']=df[col_list].sum(axis=1)
-df['順位']=[0]*10
+df['合計']=df[['国語','数学','英語']].sum(axis=1)
+df['順位']=df['合計'].rank(ascending=False)
+df=df.sort_values('順位')
 print(df)
