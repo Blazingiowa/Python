@@ -8,4 +8,4 @@ lst_test_x=[[10.8,18,20.3]]
 lr=LinearRegression(normalize=True)
 lr.fit(lst_train_x,lst_train_y)
 ar_predict_y=lr.predict(lst_test_x)
-print('7月の予想平均気温は{0}'.format(ar_predict_y))
+print('7月の予想平均気温は'+str(ar_predict_y)+'℃です')
