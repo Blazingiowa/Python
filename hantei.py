@@ -18,3 +18,5 @@ def predict_digit(filename):
 
 n = predict_digit("four.png")
 print("four.png = " + str(n))
+n = predict_digit("five.png")
+print("five.png = " + str(n))
