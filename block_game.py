@@ -108,15 +108,15 @@ def move_ball():
         ball_yp = -ball_yp
         score = score + 10
 
-    if bar_y - 40 <= ball_y and ball_y <= bar_y:
-        if bar_x - 80 <= ball_x and ball_x <= bar_x + 80:
+    if bar_y - 40 <= ball_y <= bar_y:
+        if bar_x - 80 <= ball_x <= bar_x + 80:
             ball_yp = -10
             score + score + 1
-        elif bar_x - 100 <= ball_x and ball_x <= bar_x - 80:
+        elif bar_x - 100 <= ball_x <= bar_x - 80:
             ball_yp = -10
             ball_xp = random.randint(-20, -10)
             score = score + 2
-        elif bar_x + 80 <= ball_x and ball_x <= bar_x + 100:
+        elif bar_x + 80 <= ball_x <= bar_x + 100:
             ball_yp = -10
             ball_xp = random.randint(10, 20)
             score = score + 2
